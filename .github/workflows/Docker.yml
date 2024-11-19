@@ -32,4 +32,4 @@ jobs:
         file: ./Dockerfile
         push: true
         # ref_name is branch name
-        tags: kaikemotta/go_ci:${{github.ref_name}}
+        tags: kaikemotta/teste_cicd:${{github.ref_name}}
