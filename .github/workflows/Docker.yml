@@ -22,7 +22,7 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v2.1.0
       with:
-        username: kaikemotta 
+        username: kaikemotta
         password: ${{ secrets.PASSWORD_DOCKER_HUB }}
     
     - name: Build and push Docker images
@@ -32,5 +32,4 @@ jobs:
         file: ./Dockerfile
         push: true
         # ref_name is branch name
-        tags: kaikemotta/go_ci:${{ github.ref_name }}
-        
+        tags: kaikemotta/go_ci:${{github.ref_name}}
